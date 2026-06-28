@@ -20,7 +20,6 @@ A full-stack Todo application built with **React** (frontend) and **Node.js + Ex
 
 ## 📁 Folder Structure
 
-```
 todo-app/
 │
 ├── frontend/
@@ -55,84 +54,4 @@ todo-app/
 ├── README.md
 ├── FEATURES.md
 └── API.md
-```
 
----
-
-## ⚙️ Installation & Setup
-
-### Prerequisites
-- Node.js v16+ installed
-- npm installed
-
-### 1. Clone the Repository
-
-```bash
-git clone <your-repo-url>
-cd todo-app
-```
-
-### 2. Start the Backend
-
-```bash
-cd backend
-npm install
-npm start
-```
-
-The server starts at **http://localhost:5000**
-
-### 3. Start the Frontend
-
-Open a new terminal:
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-The app opens at **http://localhost:5173**
-
----
-
-## 🚀 Features
-
-See [FEATURES.md](./FEATURES.md) for the full list of implemented features.
-
----
-
-## 📡 API Endpoints
-
-See [API.md](./API.md) for full API documentation with request/response examples.
-
----
-
-## 📸 Pages
-
-### Home Page (`/`)
-- Dashboard with statistics (Total, Completed, Pending)
-- Search bar
-- Filter by status (All / Pending / Completed)
-- Filter by priority (All / High / Medium / Low)
-- Sort by Newest / Oldest
-- All todo cards with Edit, Delete, View, Complete buttons
-- Add Todo modal
-
-### Todo Details Page (`/todo?id=<uuid>`)
-- Full details of a single todo
-- Edit and Delete actions
-- Toggle completion status
-- Back button to return to dashboard
-
----
-
-## 🔮 Future Improvements
-
-- User authentication (login/signup)
-- Due date reminder notifications
-- Drag-and-drop reordering
-- Labels/tags for todos
-- Dark/light theme toggle
-- Export todos to CSV
-- Database integration (MongoDB or PostgreSQL)
