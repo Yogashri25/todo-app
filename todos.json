@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "title": "Complete Ziptrrip Assignment",
+    "description": "Finish the React Todo App and push to GitHub before the deadline.",
+    "priority": "High",
+    "status": "Completed",
+    "dueDate": "2026-06-29",
+    "createdAt": "2026-06-28T10:00:00.000Z",
+    "updatedAt": "2026-06-28T06:06:45.316Z",
+    "notes": "Make sure to document all features in markdown files."
+  },
+  {
+    "id": "2",
+    "title": "Review Express CRUD APIs",
+    "description": "Understand how GET, POST, PUT, PATCH, DELETE work with Express routes.",
+    "priority": "Medium",
+    "status": "Completed",
+    "dueDate": "2026-06-28",
+    "createdAt": "2026-06-27T09:00:00.000Z",
+    "updatedAt": "2026-06-28T12:00:00.000Z",
+    "notes": "Covered controllers, routes, and fs module usage."
+  },
+  {
+    "id": "3",
+    "title": "Learn React Router",
+    "description": "Practice multi-page routing using React Router DOM with query params.",
+    "priority": "Low",
+    "status": "Completed",
+    "dueDate": "2026-06-30",
+    "createdAt": "2026-06-26T08:00:00.000Z",
+    "updatedAt": "2026-06-28T06:06:54.105Z",
+    "notes": ""
+  },
+  {
+    "id": "d62c1d36-66ef-40f9-b336-354029403679",
+    "title": "workout",
+    "description": "do atleast 45min workout",
+    "priority": "Medium",
+    "status": "Pending",
+    "dueDate": "2026-06-28",
+    "createdAt": "2026-06-28T06:07:49.328Z",
+    "updatedAt": "2026-06-28T06:07:49.331Z",
+    "notes": "u can more you sweat more u r fit"
+  }
+]
