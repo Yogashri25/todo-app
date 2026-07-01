@@ -1,57 +1,47 @@
-# TodoFlow – Full Stack Todo Application
+# Todo App – Ziptrrip Developer Assignment
 
-A full-stack Todo application built with **React** (frontend) and **Node.js + Express** (backend), featuring multi-page routing, full CRUD operations, filtering, search, and a polished dark UI.
+A full-stack Todo application built with React (frontend) and Node.js + Express (backend). Data is saved in a JSON file.
 
----
+## Features
 
-## 🛠 Technologies Used
+### Todo List Page (/todos)
+- View all todos in a list
+- Add a new todo (title, description, priority, due date)
+- Mark todo as done / pending using checkbox
+- Delete a todo
+- Filter todos by status: All, Pending, In-Progress, Done
+- Search todos by title
+- View stats: Total, Pending, Done count
+- Click View to open the detail page of any todo
 
-| Layer     | Technology                                |
-|-----------|-------------------------------------------|
-| Frontend  | React 18, React Router DOM v6, Axios      |
-| State     | React Context API                         |
-| UI        | Inline styles, react-hot-toast            |
-| Backend   | Node.js, Express.js                       |
-| Data      | JSON file (`todos.json`) via `fs` module  |
-| IDs       | UUID v4                                   |
-| Build     | Vite                                      |
+### Todo Detail Page (/todo?id=<todoId>)
+- Receives todo ID as a query parameter
+- Displays full todo information
+- Edit todo title, description, status, priority, due date
+- Save changes
+- Delete todo from detail page
+- Back button to return to list
 
----
+## Tech Stack
+- Frontend: React 18, React Router v6
+- Backend: Node.js, Express.js
+- Storage: JSON file (todos.json)
 
-## 📁 Folder Structure
+## How to Run
 
-todo-app/
-│
-├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── Home.jsx           # Todo dashboard (route: /)
-│   │   │   └── TodoDetails.jsx    # Single todo view (route: /todo?id=...)
-│   │   ├── components/
-│   │   │   ├── Navbar.jsx         # Top navigation bar
-│   │   │   ├── TodoCard.jsx       # Individual todo card
-│   │   │   └── TodoForm.jsx       # Add/Edit modal form
-│   │   ├── services/
-│   │   │   └── api.js             # Axios API calls
-│   │   ├── context/
-│   │   │   └── TodoContext.jsx    # Global state (Context API)
-│   │   ├── App.jsx                # Router setup
-│   │   └── main.jsx               # Entry point
-│   ├── index.html
-│   ├── vite.config.js
-│   └── package.json
-│
-├── backend/
-│   ├── routes/
-│   │   └── todoRoutes.js          # Express route definitions
-│   ├── controllers/
-│   │   └── todoController.js      # Business logic for each route
-│   ├── models/
-│   │   └── todos.json             # Persistent data storage
-│   ├── server.js                  # Express app entry point
-│   └── package.json
-│
-├── README.md
-├── FEATURES.md
-└── API.md
+### Backend
+cd backend
+npm install
+node server.js
 
+### Frontend
+cd frontend
+npm install
+npm start
+
+## API Endpoints
+GET    /api/todos        - Get all todos
+GET    /api/todos/:id    - Get single todo
+POST   /api/todos        - Create new todo
+PUT    /api/todos/:id    - Update todo
+DELETE /api/todos/:id    - Delete todo
